@@ -13,7 +13,7 @@
 Проект посвящён построению модели кредитного скоринга: по данным о заёмщике и его кредитной истории нужно оценить вероятность дефолта по займу.  
 Цель проекта — показать полный ML-пайплайн: EDA → предобработка → обучение моделей → сравнение
 
-:arrow_up:[к оглавлению](https://github.com/step4k777/credit_scoring/blob/master/README.md#Оглавление)
+:arrow_up:[к оглавлению](#Оглавление)
 
 ## Данные
 - `shift_ml_2026_train.csv` — обучающая выборка (признаки + таргет)
@@ -23,7 +23,7 @@
 
 > Данные не размещены в репозитории (см. `.gitignore`).
 
-:arrow_up:[к оглавлению](https://github.com/step4k777/credit_scoring/blob/master/README.md#Оглавление)
+:arrow_up:[к оглавлению](#Оглавление)
 
 ## Структура репозитория
 - `notebooks/01_eda.ipynb` — разведочный анализ данных (EDA)
@@ -31,13 +31,13 @@
 - `requirements.txt` — зависимости проекта
 - `.gitignore` — исключения (данные, сабмиты, временные файлы)
 
-:arrow_up:[к оглавлению](https://github.com/step4k777/credit_scoring/blob/master/README.md#Оглавление)
+:arrow_up:[к оглавлению](#Оглавление)
 
 ## Задача
 **Задача бинарной классификации:** предсказать целевой признак `итоговый_статус_займа` (1 - дефолт /0 - не дефолт).  
 **Метрика качества:** ROC-AUC.
 
-:arrow_up:[к оглавлению](https://github.com/step4k777/credit_scoring/blob/master/README.md#Оглавление)
+:arrow_up:[к оглавлению](#Оглавление)
 
 ## Этапы работы
 1. Импорт библиотек, загрузка данных
@@ -52,7 +52,7 @@
    - выравнивание признакового пространства train/test
 4. Обучение и сравнение моделей
 
-:arrow_up:[к оглавлению](https://github.com/step4k777/credit_scoring/blob/master/README.md#Оглавление)
+:arrow_up:[к оглавлению](#Оглавление)
 
 ## Модели и результаты
 Использовался единый train/valid split с `stratify`, `random_state=42`.
@@ -65,7 +65,7 @@
 
 > Итоговая модель для сабмита: HistGradientBoostingClassifier.
 
-:arrow_up:[к оглавлению](https://github.com/step4k777/credit_scoring/blob/master/README.md#Оглавление)
+:arrow_up:[к оглавлению](#Оглавление)
 
 ### Выводы:  
 
@@ -83,4 +83,4 @@ Decision Tree < Random Forest < Gradient Boosting
 
 Таким образом, для финального сабмита выбрана модель градиентного бустинга.
 
-:arrow_up:[к оглавлению](https://github.com/step4k777/credit_scoring/blob/master/README.md#Оглавление)
+:arrow_up:[к оглавлению](#Оглавление)
